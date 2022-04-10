@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strange Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS reset */
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/weight-lifting');
+            background-repeat: no-repeat;
+            background-size: 1536px 721px;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 14px;
+            left: 50px;
+        }
+
+        .left img {
+            width: 100px;
+            /* filter: invert(50%);*/
+            /*to invert the color of the image */
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 6px;
+            font-size: 18px;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 34%;
+            margin: 20px auto;
+        }
+
+        .right {
+            /* border: 2px solid blue; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 34px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            color: rgb(97, 33, 156);
+            text-decoration: none;
+            padding: 17px 19px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(131, 181, 255);
+        }
+
+        ul {
+            padding-left: 10px;
+        }
+
+        #name {
+            color: rgb(187, 10, 93);
+            font-weight: bold;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai 2', cursive;
+            border: 2px solid #3c2c77;
+            border-radius: 10px;
+            padding: 3px 12px;
+            margin: 2px;
+            color: rgb(5, 64, 131);
+            /* background-color: rgb(180 138 230); */
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(150 13 206);
+            color: rgb(72 207 255);
+        }
+
+        .container {
+            border: 2px solid rgb(163, 161, 161);
+            padding: 20px 20px;
+            margin: 125px 100px;
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 300px;
+            padding: 3px;
+            border: 2px solid violet;
+            margin: 8px auto;
+            font-size: 15px;
+            border-radius: 10px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .container h1 {
+            text-align: center;
+            color: rgb(195, 13, 0);
+
+        }
+
+        .container button {
+            display: block;
+            width: 25%;
+            margin: 20px auto;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/gym.png" alt="">
+            <div id="name">Strange Fitness</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">E-mail Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Greater Noida now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
